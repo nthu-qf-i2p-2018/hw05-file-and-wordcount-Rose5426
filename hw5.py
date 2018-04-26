@@ -24,7 +24,7 @@ def main(filename):
             # then, remove (strip) unwanted punctuations from every word
             # "dream." => "dream"
             for punc in string.punctuation:
-                word=word.replace(punc,'')
+                word=word.strip(punc)
             # check if word is not empty
             if word:
                 # append the word to "all_words" list
